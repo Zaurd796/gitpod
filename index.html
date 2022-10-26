@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gitpod</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+      <nav class="nav">
+        <a class="logo">
+          <svg width="131" height="40" viewBox="0 0 131 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_1:41)">
+              <path
+                d="M56.0449 30.4444C50.1877 30.4444 46 26.25 46 20.7222C46 15.1944 50.216 11 55.96 11C58.7895 11 60.9966 12.0833 62.8358 13.6667L61.6757 16.0278C60.2609 14.6389 58.45 13.5 55.8468 13.5C51.6025 13.5 48.5466 16.4167 48.5466 20.7222C48.5466 25.0278 51.5742 27.9444 55.8751 27.9444C59.5818 27.9444 62.2133 25.75 62.6377 22.4167H55.0828V19.9167H65.5239V20.0278C65.5239 26.1389 62.0152 30.4444 56.0449 30.4444Z"
+                fill="#12100C" />
+              <path d="M68.1803 16.5556H70.6137V30.4444H68.1803V16.5556Z" fill="#12100C" />
+              <path
+                d="M82.1393 30.25V28.1389C81.3753 28.2778 80.7528 28.3611 79.8473 28.3611C78.6589 28.3611 78.2345 27.75 78.2345 26.6944V18.6389H82.111V16.5556H78.2345V12.8333H75.8011V16.5556H72.9998V18.6389H75.8011V26.5556C75.8011 29.5 77.131 30.5833 79.7059 30.5833C80.6113 30.5833 81.4036 30.4444 82.1393 30.25Z"
+                fill="#12100C" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M87.0989 36H84.6655V16.5556H87.0989V18.5556C88.259 17.0278 89.9851 16.2222 92.0789 16.2222C96.0969 16.2222 98.8981 19.2222 98.8981 23.5C98.8981 27.7778 96.0969 30.7778 92.0789 30.7778C90.07 30.7778 88.4288 30 87.0989 28.4167V36ZM86.9292 23.5C86.9292 26.5833 88.7967 28.5556 91.6545 28.5556C94.5123 28.5556 96.3798 26.5556 96.3798 23.5C96.3798 20.4444 94.5123 18.4444 91.6545 18.4444C88.7967 18.4444 86.9292 20.4167 86.9292 23.5Z"
+                fill="#12100C" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M100.413 23.5C100.413 27.6667 103.582 30.7778 107.826 30.7778C112.071 30.7778 115.24 27.6667 115.24 23.5C115.24 19.3333 112.071 16.2222 107.826 16.2222C103.582 16.2222 100.413 19.3333 100.413 23.5ZM112.722 23.5C112.722 26.3889 110.769 28.4722 107.826 28.4722C104.884 28.4722 102.931 26.3889 102.931 23.5C102.931 20.6111 104.884 18.5278 107.826 18.5278C110.769 18.5278 112.722 20.6111 112.722 23.5Z"
+                fill="#12100C" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M128.567 11H131V30.4444H128.567V28.4444C127.406 29.9722 125.68 30.7778 123.587 30.7778C119.569 30.7778 116.767 27.7778 116.767 23.5C116.767 19.2222 119.569 16.2222 123.587 16.2222C125.596 16.2222 127.237 17 128.567 18.5833V11ZM128.736 23.5C128.736 20.4167 126.869 18.4444 124.011 18.4444C121.153 18.4444 119.286 20.4444 119.286 23.5C119.286 26.5556 121.153 28.5556 124.011 28.5556C126.869 28.5556 128.736 26.5833 128.736 23.5Z"
+                fill="#12100C" />
+              <path
+                d="M69.4026 14.7302C70.3643 14.7302 71.1439 13.9679 71.1439 13.0275C71.1439 12.087 70.3643 11.3247 69.4026 11.3247C68.4408 11.3247 67.6612 12.087 67.6612 13.0275C67.6612 13.9679 68.4408 14.7302 69.4026 14.7302Z"
+                fill="#12100C" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M21.388 1.99199C22.4572 3.8871 21.8071 6.30126 19.936 7.38418L8.30155 14.1176C7.99402 14.2956 7.8042 14.6271 7.8042 14.9861V25.5563C7.8042 25.9153 7.99402 26.2467 8.30155 26.4247L17.511 31.7548C17.8141 31.9301 18.1859 31.9301 18.489 31.7548L27.6985 26.4247C28.006 26.2467 28.1958 25.9153 28.1958 25.5563V18.9825L19.9175 23.7132C18.0406 24.7858 15.6605 24.1142 14.6015 22.2133C13.5425 20.3123 14.2056 17.9017 16.0825 16.8292L27.9277 10.0602C31.5358 7.99827 36 10.6386 36 14.8346V26.3588C36 29.0581 34.572 31.5504 32.258 32.8896L21.6846 39.009C19.4014 40.3303 16.5986 40.3303 14.3154 39.009L3.74196 32.8896C1.42803 31.5504 0 29.0581 0 26.3588V14.1835C0 11.4843 1.42803 8.99201 3.74196 7.65282L16.064 0.521394C17.9351 -0.561524 20.3188 0.0968852 21.388 1.99199Z"
+                fill="url(#paint0_linear_1:41)" />
+            </g>
+            <defs>
+              <linearGradient id="paint0_linear_1:41" x1="27.0957" y1="6.04878" x2="8.28086" y2="35.2541"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#FFB45B" />
+                <stop offset="1" stop-color="#FF8A00" />
+              </linearGradient>
+              <clipPath id="clip0_1:41">
+                <rect width="131" height="40" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </a>
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="#">Features</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="#">Pricing</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="#">Blog</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="#">Docs</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="#">Changelog</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__list-link" href="#">We're hiring</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__button" type="button">Login</button>
+    </div>
+  </header>
+  <main class="main">
+    <h1 class="visually-hidden">Gitpod app</h1>
+    <section class="promo">
+      <div class="container">
+        <div class="promo__inner">
+          <div class="promo__content">
+            <h2 class="title promo__title">Always<br>
+              Ready to Code.
+            </h2>
+            <p class="promo__desc">Spin up fresh, automated dev environments
+              for each task, in the cloud, in seconds.
+            </p>
+            <div class="promo__wrapper">
+              <a class="promo__link" href="#">Try now</a>
+              <div class="promo__texts">
+                <p class="promo__text">Open a workspace.</p>
+                <p class="promo__text">Start from any Git context.</p>
+              </div>
+            </div>
+            <ul class="promo__list">
+              <li class="promo__list-item">
+                <a class="promo__list-link" href="#"></a>
+              </li>
+              <li class="promo__list-item">
+                <a class="promo__list-link" href="#"></a>
+              </li>
+              <li class="promo__list-item">
+                <a class="promo__list-link" href="#"></a>
+              </li>
+            </ul>
+          </div>
+          <img class="promo__img" src="images/promo.png" width="630" height="652"
+            alt="computer, chair in shape of 'enter' key, bookshelves">
+        </div>
+      </div>
+    </section>
+    <div class="works">
+      <div class="container">
+        <div class="works__inner">
+          <p class="works__text">Select project,</p>
+          <p class="works__text">
+            <span>
+              check dependencies, checkout branch, view readme.txt, install tools, run build, run test,
+            </span>
+          </p>
+          <p class="works__text">start coding.</p>
+        </div>
+      </div>
+    </div>
+    <section class="features">
+      <div class="container">
+        <div class="features__inner">
+          <div class="features__content">
+            <h2 class="features__title">
+              Think CI/CD for dev environments
+            </h2>
+            <p class="features__text">
+              We invented prebuilds so application code, configuration and infrastructure can all be stored as
+              machine-executable code in your git repositories and applied to dev environments automatically and
+              continuously.
+            </p>
+            <a class="features__link features__link_left" href="#">
+              More on prebuilds
+            </a>
+            <a class="features__link features__link_right" href="#">
+              Documentation
+            </a>
+          </div>
+          <img class="features__img" src="images/features.png" width="590" height="472"
+            alt="graphics showing how the app works">
+        </div>
+      </div>
+    </section>
+    <section class="advantages">
+      <div class="container">
+        <h2 class="advantages__title">
+          Remote-first Secure by design.
+        </h2>
+        <img class="advantages__img" src="images/advantages.png" width="1269" height="821"
+          alt="graphics showing advantages of the app">
+        <p class="advantages__text">
+          You no longer need an over-powered laptop to code, Gitpod works just as smoothly on a Chromebook or iPad. All
+          you need is a browser. Gitpod centralizes all source code and never stores it on insecure machines and
+          networks.
+        </p>
+        <a class="advantages__link advantages__link_left" href="#">
+          Chrome Extension
+        </a>
+        <a class="advantages__link advantages__link_right" href="#">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.4395 7.79907C21.9502 6.6211 20.9583 5.34938 20.1797 4.94766C20.8134 6.19031 21.18 7.43672 21.3202 8.36672C21.3202 8.36672 21.3202 8.37328 21.3225 8.38547C20.0489 5.21016 17.8889 3.92953 16.125 1.14187C16.0355 1.00125 15.9464 0.860623 15.8592 0.710155C15.81 0.625311 15.7702 0.548436 15.7355 0.475779C15.6624 0.334827 15.6059 0.18586 15.5672 0.0318729C15.5675 0.0245605 15.5651 0.0173948 15.5604 0.0117652C15.5557 0.00613559 15.5491 0.00244326 15.5419 0.00140413C15.535 -0.000468044 15.5277 -0.000468044 15.5208 0.00140413C15.5189 0.00225301 15.5172 0.00335739 15.5156 0.00468538C15.5128 0.00468538 15.51 0.00796664 15.5072 0.00890414L15.5119 0.00281038C12.682 1.66031 11.722 4.72641 11.6339 6.26063C10.5031 6.33796 9.42184 6.75435 8.53125 7.45547C8.43816 7.37676 8.34083 7.30321 8.23969 7.23516C7.98303 6.33669 7.97219 5.38581 8.20828 4.48172C7.05094 5.00906 6.15094 5.84109 5.49656 6.5775H5.49141C5.04469 6.01172 5.07609 4.14563 5.10141 3.75609C5.09625 3.73172 4.76859 3.92625 4.72641 3.95578C4.33222 4.23699 3.96375 4.5526 3.62531 4.89891C3.24019 5.28937 2.88834 5.7113 2.57344 6.16031C1.84894 7.18706 1.33513 8.34723 1.06172 9.57375C1.05656 9.59813 1.05187 9.62344 1.04672 9.64828C1.02562 9.74719 0.949219 10.2436 0.935625 10.3514V10.3763C0.836019 10.8892 0.773979 11.4087 0.75 11.9306V11.9883C0.75 18.2095 5.79375 23.2533 12.015 23.2533C17.587 23.2533 22.2131 19.208 23.1192 13.8942C23.138 13.7503 23.1534 13.605 23.1703 13.4597C23.3944 11.5275 23.1455 9.49688 22.4395 7.79907ZM9.45516 16.6172C9.50766 16.642 9.55734 16.6697 9.61125 16.6941L9.61875 16.6988C9.56484 16.6725 9.51 16.6453 9.45562 16.6172H9.45516ZM21.3234 8.39063V8.37985V8.39203V8.39063Z"
+              fill="url(#paint0_linear_1:1046)" />
+            <path
+              d="M22.4395 7.79916C21.9502 6.62119 20.9583 5.34947 20.1797 4.94775C20.8134 6.19041 21.18 7.43682 21.3202 8.36682V8.38979C22.3833 11.2717 21.8039 14.2023 20.9695 15.9929C19.6786 18.7632 16.5534 21.6029 11.6611 21.4646C6.37969 21.3146 1.72359 17.3907 0.85406 12.2556C0.695622 11.4451 0.85406 11.034 0.933748 10.3764C0.836716 10.8831 0.799685 11.0298 0.751404 11.9307V11.9884C0.751404 18.2096 5.79516 23.2534 12.0164 23.2534C17.5884 23.2534 22.2145 19.2081 23.1206 13.8943C23.1394 13.7504 23.1548 13.6051 23.1717 13.4598C23.3944 11.5276 23.1455 9.49698 22.4395 7.79916Z"
+              fill="url(#paint1_radial_1:1046)" />
+            <path
+              d="M22.4395 7.79916C21.9502 6.62119 20.9583 5.34947 20.1797 4.94775C20.8134 6.19041 21.18 7.43682 21.3202 8.36682V8.38979C22.3833 11.2717 21.8039 14.2023 20.9695 15.9929C19.6786 18.7632 16.5534 21.6029 11.6611 21.4646C6.37969 21.3146 1.72359 17.3907 0.85406 12.2556C0.695622 11.4451 0.85406 11.034 0.933748 10.3764C0.836716 10.8831 0.799685 11.0298 0.751404 11.9307V11.9884C0.751404 18.2096 5.79516 23.2534 12.0164 23.2534C17.5884 23.2534 22.2145 19.2081 23.1206 13.8943C23.1394 13.7504 23.1548 13.6051 23.1717 13.4598C23.3944 11.5276 23.1455 9.49698 22.4395 7.79916Z"
+              fill="url(#paint2_radial_1:1046)" />
+            <path
+              d="M16.965 9.12293C16.9898 9.14028 17.0119 9.15762 17.0353 9.17496C16.7526 8.67296 16.4003 8.21342 15.989 7.80996C12.4875 4.3084 15.0712 0.217149 15.5067 0.00902344L15.5114 0.00292969C12.6815 1.66043 11.7215 4.72652 11.6334 6.26074C11.7647 6.25184 11.8955 6.24059 12.029 6.24059C14.1408 6.24059 15.9801 7.40215 16.965 9.12293Z"
+              fill="url(#paint3_radial_1:1046)" />
+            <path
+              d="M12.0361 9.82214C12.0178 10.1034 11.0278 11.069 10.6814 11.069C7.47797 11.069 6.95813 13.0068 6.95813 13.0068C7.09875 14.639 8.23594 15.9829 9.61172 16.694C9.67454 16.7264 9.73782 16.7554 9.79922 16.7845C9.90938 16.8314 10.02 16.8782 10.1302 16.9199C10.602 17.0864 11.096 17.1812 11.5959 17.2012C17.2106 17.4646 18.2991 10.4878 14.2467 8.46183C15.2841 8.28136 16.3613 8.69901 16.9627 9.12136C15.9783 7.40058 14.1384 6.23901 12.0267 6.23901C11.8931 6.23901 11.7623 6.25026 11.6311 6.25917C10.5011 6.33746 9.4209 6.75432 8.53125 7.45542C8.70329 7.6012 8.89735 7.79526 9.30563 8.19745C10.0716 8.95308 12.0319 9.73073 12.0361 9.82214Z"
+              fill="url(#paint4_radial_1:1046)" />
+            <path
+              d="M12.0361 9.82214C12.0178 10.1034 11.0278 11.069 10.6814 11.069C7.47797 11.069 6.95813 13.0068 6.95813 13.0068C7.09875 14.639 8.23594 15.9829 9.61172 16.694C9.67454 16.7264 9.73782 16.7554 9.79922 16.7845C9.90938 16.8314 10.02 16.8782 10.1302 16.9199C10.602 17.0864 11.096 17.1812 11.5959 17.2012C17.2106 17.4646 18.2991 10.4878 14.2467 8.46183C15.2841 8.28136 16.3613 8.69901 16.9627 9.12136C15.9783 7.40058 14.1384 6.23901 12.0267 6.23901C11.8931 6.23901 11.7623 6.25026 11.6311 6.25917C10.5011 6.33746 9.4209 6.75432 8.53125 7.45542C8.70329 7.6012 8.89735 7.79526 9.30563 8.19745C10.0716 8.95308 12.0319 9.73073 12.0361 9.82214Z"
+              fill="url(#paint5_radial_1:1046)" />
+            <path
+              d="M8.00765 7.08091C8.09906 7.13997 8.17406 7.18966 8.24203 7.23513C7.98537 6.33666 7.97453 5.38578 8.21062 4.48169C7.05328 5.00903 6.15328 5.84106 5.4989 6.57747C5.55187 6.57606 7.18593 6.54653 8.00765 7.08091Z"
+              fill="url(#paint6_radial_1:1046)" />
+            <path
+              d="M0.854043 12.2555C1.72357 17.3907 6.37967 21.3146 11.6648 21.4646C16.5572 21.6028 19.6804 18.7632 20.9733 15.9928C21.8076 14.2018 22.387 11.2716 21.3239 8.38972V8.36816C21.3239 8.37097 21.3239 8.37472 21.3262 8.38691C21.7256 10.9964 20.3986 13.5244 18.3239 15.2339C18.3217 15.2387 18.3197 15.2436 18.3178 15.2485C14.2748 18.5405 10.4062 17.2346 9.62295 16.7016C9.56857 16.6753 9.51373 16.6482 9.45935 16.62C7.10201 15.495 6.12842 13.3458 6.33701 11.5041C4.34717 11.5041 3.66842 9.82504 3.66842 9.82504C3.66842 9.82504 5.45529 8.55097 7.81029 9.6591C9.99138 10.6857 12.0398 9.82551 12.0398 9.82504C12.0356 9.73363 10.0753 8.95363 9.31076 8.20035C8.90248 7.79816 8.70842 7.6041 8.53638 7.45832C8.4433 7.3796 8.34596 7.30606 8.24482 7.23801C8.17779 7.19113 8.1042 7.14426 8.01045 7.08379C7.18873 6.54941 5.55467 6.57894 5.50076 6.58035H5.4956C5.04888 6.01457 5.08029 4.14847 5.1056 3.75894C5.10045 3.73457 4.77279 3.9291 4.7306 3.95863C4.33642 4.23984 3.96794 4.55545 3.62951 4.90176C3.24439 5.29221 2.89254 5.71415 2.57764 6.16316C1.85314 7.18991 1.33933 8.35008 1.06592 9.5766C1.05701 9.59816 0.65623 11.348 0.854043 12.2555Z"
+              fill="url(#paint7_radial_1:1046)" />
+            <path
+              d="M15.989 7.80985C16.4003 8.2133 16.7526 8.67285 17.0353 9.17485C17.0939 9.21885 17.1502 9.26578 17.204 9.31547C19.7578 11.6667 18.4218 14.9953 18.3201 15.2344C20.3948 13.5249 21.7218 10.9969 21.3225 8.38735C20.0489 5.21016 17.8889 3.92953 16.125 1.14187C16.0354 1.00125 15.9464 0.860624 15.8592 0.710155C15.81 0.625311 15.7701 0.548436 15.7354 0.47578C15.6623 0.334827 15.6059 0.18586 15.5672 0.0318729C15.5675 0.0245605 15.565 0.0173948 15.5604 0.0117652C15.5557 0.00613559 15.5491 0.00244326 15.5418 0.00140413C15.5349 -0.000468044 15.5277 -0.000468044 15.5208 0.00140413C15.5189 0.00225301 15.5172 0.00335739 15.5156 0.00468539C15.5128 0.00468539 15.51 0.00796664 15.5072 0.00890414C15.0712 0.217029 12.4875 4.30828 15.989 7.80985Z"
+              fill="url(#paint8_radial_1:1046)" />
+            <path
+              d="M17.2031 9.31303C17.1493 9.26334 17.0929 9.2164 17.0343 9.1724C17.0114 9.15506 16.9875 9.13771 16.964 9.12037C16.3626 8.6985 15.2854 8.28037 14.2481 8.46084C18.3 10.4868 17.212 17.4636 11.5973 17.2002C11.0974 17.1802 10.6033 17.0854 10.1315 16.919C10.0214 16.8777 9.91075 16.8322 9.8006 16.7835C9.73685 16.7544 9.67357 16.7254 9.6131 16.693L9.6206 16.6977C10.4039 17.2321 14.2725 18.538 18.3154 15.2446C18.3154 15.2446 18.3178 15.2385 18.3215 15.23C18.4218 14.9952 19.7578 11.6666 17.2031 9.31303Z"
+              fill="url(#paint9_radial_1:1046)" />
+            <path
+              d="M6.95811 13.0069C6.95811 13.0069 7.47796 11.0691 10.6814 11.0691C11.0278 11.0691 12.0178 10.1025 12.0361 9.82218C12.0544 9.54187 9.98765 10.6828 7.80655 9.65625C5.45155 8.54812 3.66467 9.82218 3.66467 9.82218C3.66467 9.82218 4.34342 11.5012 6.33327 11.5012C6.12467 13.343 7.09827 15.4903 9.45561 16.6172C9.50811 16.642 9.5578 16.6697 9.61171 16.6941C8.23593 15.9844 7.10014 14.6391 6.95811 13.0069Z"
+              fill="url(#paint10_radial_1:1046)" />
+            <path
+              d="M22.4395 7.79907C21.9502 6.6211 20.9583 5.34938 20.1797 4.94766C20.8134 6.19031 21.18 7.43672 21.3202 8.36672C21.3202 8.36672 21.3202 8.37328 21.3225 8.38547C20.0489 5.21016 17.8889 3.92953 16.125 1.14187C16.0355 1.00125 15.9464 0.860623 15.8592 0.710155C15.81 0.625311 15.7702 0.548436 15.7355 0.475779C15.6624 0.334827 15.6059 0.18586 15.5672 0.0318729C15.5675 0.0245605 15.5651 0.0173948 15.5604 0.0117652C15.5557 0.00613559 15.5491 0.00244326 15.5419 0.00140413C15.535 -0.000468044 15.5277 -0.000468044 15.5208 0.00140413C15.5189 0.00225301 15.5172 0.00335739 15.5156 0.00468538C15.5128 0.00468538 15.51 0.00796664 15.5072 0.00890414L15.5119 0.00281038C12.682 1.66031 11.722 4.72641 11.6339 6.26063C11.7652 6.25172 11.8959 6.24047 12.0295 6.24047C14.1412 6.24047 15.9806 7.40203 16.9655 9.12282C16.3641 8.70094 15.2869 8.28281 14.2495 8.46328C18.3014 10.4892 17.2134 17.4661 11.5987 17.2027C11.0989 17.1826 10.6048 17.0878 10.133 16.9214C10.0228 16.8802 9.91219 16.8347 9.80203 16.7859C9.73828 16.7569 9.675 16.7278 9.61453 16.6955L9.62203 16.7002C9.56766 16.6739 9.51281 16.6467 9.45844 16.6186C9.51094 16.6434 9.56062 16.6711 9.61453 16.6955C8.23594 15.9844 7.10016 14.6391 6.95812 13.0069C6.95812 13.0069 7.47797 11.0691 10.6814 11.0691C11.0278 11.0691 12.0178 10.1025 12.0361 9.82219C12.0319 9.73078 10.0716 8.95078 9.30703 8.1975C8.89875 7.79531 8.70469 7.60125 8.53266 7.45547C8.43957 7.37676 8.34224 7.30321 8.24109 7.23516C7.98444 6.33669 7.97359 5.38581 8.20969 4.48172C7.05234 5.00906 6.15234 5.84109 5.49797 6.5775H5.49281C5.04609 6.01172 5.0775 4.14563 5.10281 3.75609C5.09766 3.73172 4.77 3.92625 4.72781 3.95578C4.33363 4.23699 3.96515 4.5526 3.62672 4.89891C3.2416 5.28937 2.88975 5.7113 2.57484 6.16031C1.85034 7.18706 1.33654 8.34723 1.06312 9.57375C1.05797 9.59813 1.05328 9.62344 1.04812 9.64828C1.02703 9.74719 0.931406 10.2506 0.918281 10.3584C0.918281 10.3669 0.918281 10.3505 0.918281 10.3584C0.830512 10.8786 0.774315 11.4037 0.75 11.9306V11.9883C0.75 18.2095 5.79375 23.2533 12.015 23.2533C17.587 23.2533 22.2131 19.208 23.1192 13.8942C23.138 13.7503 23.1534 13.605 23.1703 13.4597C23.3944 11.5275 23.1455 9.49688 22.4395 7.79907ZM21.322 8.3775V8.38969V8.3775Z"
+              fill="url(#paint11_linear_1:1046)" />
+            <defs>
+              <linearGradient id="paint0_linear_1:1046" x1="20.9484" y1="3.60234" x2="2.24717" y2="21.6455"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="0.05" stop-color="#FFF44F" />
+                <stop offset="0.11" stop-color="#FFE847" />
+                <stop offset="0.22" stop-color="#FFC830" />
+                <stop offset="0.37" stop-color="#FF980E" />
+                <stop offset="0.4" stop-color="#FF8B16" />
+                <stop offset="0.46" stop-color="#FF672A" />
+                <stop offset="0.53" stop-color="#FF3647" />
+                <stop offset="0.7" stop-color="#E31587" />
+              </linearGradient>
+              <radialGradient id="paint1_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(20.0841 2.58103) scale(23.4848)">
+                <stop offset="0.13" stop-color="#FFBD4F" />
+                <stop offset="0.19" stop-color="#FFAC31" />
+                <stop offset="0.25" stop-color="#FF9D17" />
+                <stop offset="0.28" stop-color="#FF980E" />
+                <stop offset="0.4" stop-color="#FF563B" />
+                <stop offset="0.47" stop-color="#FF3750" />
+                <stop offset="0.71" stop-color="#F5156C" />
+                <stop offset="0.78" stop-color="#EB0878" />
+                <stop offset="0.86" stop-color="#E50080" />
+              </radialGradient>
+              <radialGradient id="paint2_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(11.5027 12.182) scale(23.4848)">
+                <stop offset="0.3" stop-color="#960E18" />
+                <stop offset="0.35" stop-color="#B11927" stop-opacity="0.74" />
+                <stop offset="0.43" stop-color="#DB293D" stop-opacity="0.34" />
+                <stop offset="0.5" stop-color="#F5334B" stop-opacity="0.09" />
+                <stop offset="0.53" stop-color="#FF3750" stop-opacity="0" />
+              </radialGradient>
+              <radialGradient id="paint3_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(14.3344 -2.74863) scale(17.0138)">
+                <stop offset="0.13" stop-color="#FFF44F" />
+                <stop offset="0.25" stop-color="#FFDC3E" />
+                <stop offset="0.51" stop-color="#FF9D12" />
+                <stop offset="0.53" stop-color="#FF980E" />
+              </radialGradient>
+              <radialGradient id="paint4_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(8.90532 18.3164) scale(11.182)">
+                <stop offset="0.35" stop-color="#3A8EE6" />
+                <stop offset="0.47" stop-color="#5C79F0" />
+                <stop offset="0.67" stop-color="#9059FF" />
+                <stop offset="1" stop-color="#C139E6" />
+              </radialGradient>
+              <radialGradient id="paint5_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(11.8399 9.39073) rotate(-13.8972) scale(5.9243 6.95964)">
+                <stop offset="0.21" stop-color="#9059FF" stop-opacity="0" />
+                <stop offset="0.28" stop-color="#8C4FF3" stop-opacity="0.06" />
+                <stop offset="0.75" stop-color="#7716A8" stop-opacity="0.45" />
+                <stop offset="0.97" stop-color="#6E008B" stop-opacity="0.6" />
+              </radialGradient>
+              <radialGradient id="paint6_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(11.2059 1.61997) scale(8.04469)">
+                <stop stop-color="#FFE226" />
+                <stop offset="0.12" stop-color="#FFDB27" />
+                <stop offset="0.3" stop-color="#FFC82A" />
+                <stop offset="0.5" stop-color="#FFA930" />
+                <stop offset="0.73" stop-color="#FF7E37" />
+                <stop offset="0.79" stop-color="#FF7139" />
+              </radialGradient>
+              <radialGradient id="paint7_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(17.5293 -3.48231) scale(34.3223)">
+                <stop offset="0.11" stop-color="#FFF44F" />
+                <stop offset="0.46" stop-color="#FF980E" />
+                <stop offset="0.62" stop-color="#FF5634" />
+                <stop offset="0.72" stop-color="#FF3647" />
+                <stop offset="0.9" stop-color="#E31587" />
+              </radialGradient>
+              <radialGradient id="paint8_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(14.2117 0.267608) rotate(84.2321) scale(25.0176 16.4367)">
+                <stop stop-color="#FFF44F" />
+                <stop offset="0.06" stop-color="#FFE847" />
+                <stop offset="0.17" stop-color="#FFC830" />
+                <stop offset="0.3" stop-color="#FF980E" />
+                <stop offset="0.36" stop-color="#FF8B16" />
+                <stop offset="0.45" stop-color="#FF672A" />
+                <stop offset="0.57" stop-color="#FF3647" />
+                <stop offset="0.74" stop-color="#E31587" />
+              </radialGradient>
+              <radialGradient id="paint9_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(11.0165 4.59928) scale(21.4275)">
+                <stop offset="0.14" stop-color="#FFF44F" />
+                <stop offset="0.48" stop-color="#FF980E" />
+                <stop offset="0.59" stop-color="#FF5634" />
+                <stop offset="0.66" stop-color="#FF3647" />
+                <stop offset="0.9" stop-color="#E31587" />
+              </radialGradient>
+              <radialGradient id="paint10_radial_1:1046" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                gradientTransform="translate(16.673 5.85375) scale(23.4525)">
+                <stop offset="0.09" stop-color="#FFF44F" />
+                <stop offset="0.23" stop-color="#FFE141" />
+                <stop offset="0.51" stop-color="#FFAF1E" />
+                <stop offset="0.63" stop-color="#FF980E" />
+              </radialGradient>
+              <linearGradient id="paint11_linear_1:1046" x1="20.7234" y1="3.50578" x2="4.81124" y2="19.4184"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="0.17" stop-color="#FFF44F" stop-opacity="0.8" />
+                <stop offset="0.27" stop-color="#FFF44F" stop-opacity="0.63" />
+                <stop offset="0.49" stop-color="#FFF44F" stop-opacity="0.22" />
+                <stop offset="0.6" stop-color="#FFF44F" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+          </svg>
+          Firefox Extension
+        </a>
+      </div>
+    </section>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">Used by 400,000+ developers.</h2>
+        <ul class="reviews__list">
+          <li class="reviews__list-item">
+            <blockquote class="reviews__blockquote">
+              <p class="reviews__text">GitPod is incredibly cool.</p>
+              <p class="reviews__text">In my opinion, this is a big step in open source software contribution. I'm
+                excited to see where we go from here.</p>
+              <div class="reviews__author-box">
+                <img class="reviews__author-img" src="images/author-1.png" width="48" height="48" alt="Ben Halpern">
+                <div class="reviews__author-info">
+                  <cite>Ben Halpern</cite>
+                  <p class="reviews__author-desc">
+                    Creator and Co-founder <span>@forem</span> and <span>@ThePracticalDev</span>
+                  </p>
+                </div>
+              </div>
+            </blockquote>
+          </li>
+          <li class="reviews__list-item">
+            <blockquote class="reviews__blockquote">
+              <p class="reviews__text">
+                Let's say we were overwhelmed how smooth @gitpod workspaces creation & own Docker image for workspaces
+                worked.
+              </p>
+              <p class="reviews__text">
+                Plus, installing @code extensions from the store and integrating @gitlab CI. That blew<br> my mind
+                entirely,
+                and that is hard ;)
+              </p>
+              <div class="reviews__author-box">
+                <img class="reviews__author-img" src="images/author-2.png" width="48" height="48"
+                  alt="Michael Friedrich">
+                <div class="reviews__author-info">
+                  <cite>Michael Friedrich</cite>
+                  <p class="reviews__author-desc">
+                    Developer Evangelist <span>@GitLab</span>
+                  </p>
+                </div>
+              </div>
+            </blockquote>
+          </li>
+          <li class="reviews__list-item">
+            <blockquote class="reviews__blockquote">
+              <p class="reviews__text">
+                Look at any PR (pull request) in a full coding environment where you can edit, build, and test the PR
+                code, by just prepending "gitpod.io#" to the PR URL. Super useful for reviewing/testing stuff without
+                having to check it out locally!
+              </p>
+              <div class="reviews__author-box">
+                <img class="reviews__author-img" src="images/author-3.png" width="48" height="48" alt="Julius Volz">
+                <div class="reviews__author-info">
+                  <cite>Julius Volz</cite>
+                  <p class="reviews__author-desc">
+                    Creator <span>@PrometheusIO</span>
+                  </p>
+                </div>
+              </div>
+            </blockquote>
+          </li>
+        </ul>
+
+        <ul class="partners">
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/gitlab.svg" width="138" height="46" alt="gitlab logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/freecodecamp.svg" width="144" height="20" alt="freecodecamp logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/owave.svg" width="138" height="82" alt="owave logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/google.svg" width="138" height="36" alt="google logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/amazon.svg" width="138" height="34" alt="amazon logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/facebook.svg" width="138" height="22" alt="facebook">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/uber.svg" width="138" height="37" alt="uber logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/openai.svg" width="92" height="23" alt="OpenAI logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/intel.svg" width="138" height="67" alt="intel logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/theia.svg" width="138" height="17" alt="theia logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <img class="partners__img" src="images/code.svg" width="138" height="46" alt="code institute logo">
+            </a>
+          </li>
+          <li class="partners__item">
+            <a class="partners__link" href="#">
+              <svg width="138" height="38" viewBox="0 0 138 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path d="M26 3H112V33H26V3Z" fill="url(#pattern0)" />
+                <defs>
+                  <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_1:823" transform="translate(0.00696523) scale(0.00172692 0.0049505)" />
+                  </pattern>
+                  <image id="image0_1:823" width="571" height="202"
+                    xlink:href="data:image/png;base64,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" />
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="start">
+      <div class="container">
+        <h2 class="start__title">
+          Get started now
+        </h2>
+        <div class="start__box">
+          <section class="start__connect">
+            <h3 class="start__connect-title">
+              Connect Git repository
+            </h3>
+            <p class="start__text">
+              Select a Git provider to start with an existing project from any Git context.
+            </p>
+            <ul class="start__connect-list">
+              <li class="start__connect-item">
+                <a class="start__connect-link" href="#">
+                  Continue with GitLab
+                </a>
+              </li>
+              <li class="start__connect-item">
+                <a class="start__connect-link" href="#">
+                  Continue with GitHub
+                </a>
+              </li>
+              <li class="start__connect-item">
+                <a class="start__connect-link" href="#">
+                  Continue with Bitbucket
+                </a>
+              </li>
+            </ul>
+            <p class="start__text">
+              Or prefix any GitLab, GitHub or Bitbucket URL with
+            </p>
+            <span>gitpod.io/#</span>
+          </section>
+          <section class="start__launch">
+            <h3 class="start__launch-title">
+              Launch an example workspace
+            </h3>
+            <p class="start__text">
+              Dive into one of our example workspaces
+            </p>
+            <ul class="start__launch-list">
+              <li class="start__launch-item">
+                <p class="start__launch-desc">
+                  Node or TypeScript
+                </p>
+                <a class="start__launch-link" href="#">
+                  Launch workspace
+                </a>
+              </li>
+              <li class="start__launch-item">
+                <p class="start__launch-desc">
+                  <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M13.4027 0C6.54839 4.91597e-07 6.97642 2.98799 6.97642 2.98799L6.98406 6.08351H13.5249V7.01294H4.38605C4.38605 7.01294 0 6.51292 0 13.4651C-4.89037e-07 20.4174 3.82824 20.1708 3.82824 20.1708H6.11296V16.9447C6.11296 16.9447 5.98981 13.0964 9.88008 13.0964C13.7703 13.0964 16.3675 13.0964 16.3675 13.0964C16.3675 13.0964 20.0123 13.1557 20.0123 9.55541C20.0123 5.95515 20.0123 3.60248 20.0123 3.60248C20.0123 3.60248 20.5657 0 13.4027 0ZM9.79602 2.08161C10.4468 2.0816 10.9728 2.61034 10.9728 3.26451C10.9728 3.91869 10.4468 4.44742 9.79602 4.44742C9.14525 4.44742 8.61928 3.91869 8.61928 3.26451C8.61928 2.61034 9.14525 2.08161 9.79602 2.08161Z"
+                      fill="url(#paint0_linear_1:881)" />
+                    <path
+                      d="M13.5973 27C20.4516 27 20.0236 24.0121 20.0236 24.0121L20.0159 20.9165H13.4751V19.9871H22.614C22.614 19.9871 27 20.4871 27 13.5349C27 6.58267 23.1718 6.82921 23.1718 6.82921H20.887V10.0553C20.887 10.0553 21.0102 13.9036 17.1199 13.9036C13.2297 13.9036 10.6325 13.9036 10.6325 13.9036C10.6325 13.9036 6.9877 13.8444 6.9877 17.4446C6.9877 21.0449 6.9877 23.3976 6.9877 23.3976C6.9877 23.3976 6.43431 27 13.5973 27ZM17.204 24.9184C16.5532 24.9184 16.0272 24.3897 16.0272 23.7355C16.0272 23.0814 16.5532 22.5526 17.204 22.5526C17.8548 22.5526 18.3807 23.0814 18.3807 23.7355C18.3807 24.3897 17.8548 24.9184 17.204 24.9184Z"
+                      fill="url(#paint1_linear_1:881)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_1:881" x1="2.59475" y1="2.36004" x2="16.0154" y2="15.7555"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#387EB8" />
+                        <stop offset="1" stop-color="#366994" />
+                      </linearGradient>
+                      <linearGradient id="paint1_linear_1:881" x1="10.8075" y1="10.9262" x2="25.2179" y2="24.6602"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFE052" />
+                        <stop offset="1" stop-color="#FFC331" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                  Python
+                </p>
+                <a class="start__launch-link" href="#">
+                  Launch workspace
+                </a>
+              </li>
+              <li class="start__launch-item">
+                <p class="start__launch-desc">
+                  Go
+                </p>
+                <a class="start__launch-link" href="#">
+                  Launch workspace
+                </a>
+              </li>
+              <li class="start__launch-item">
+                <p class="start__launch-desc">
+                  Rust
+                </p>
+                <a class="start__launch-link" href="#">
+                  Launch workspace
+                </a>
+              </li>
+              <li class="start__launch-item">
+                <p class="start__launch-desc">
+                  Java
+                </p>
+                <a class="start__launch-link" href="#">
+                  Launch workspace
+                </a>
+              </li>
+              <li class="start__launch-item">
+                <p class="start__launch-desc">
+                  Svelte
+                </p>
+                <a class="start__launch-link" href="#">
+                  Launch workspace
+                </a>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="footer__info">
+      <h2 class="visually-hidden">Info block</h2>
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info-row footer__info-row_top">
+            <section class="footer__info-content">
+              <h3 class="footer__info-content-title">Gitpod</h3>
+              <ul class="footer__info-list">
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Home</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Features</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Pricing</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Changelog</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Self-Hosted</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Gitpod vs GitHub</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Codespaces</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Status</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__info-content">
+              <h3 class="footer__info-content-title">Developer</h3>
+              <ul class="footer__info-list">
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Getting started</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Screencasts</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Blog</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Documentation</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Report a bug</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Community</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__info-content">
+              <h3 class="footer__info-content-title">Company</h3>
+              <ul class="footer__info-list">
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">About</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Careers</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Contact</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Media Kit</a>
+                </li>
+              </ul>
+            </section>
+            <section class="footer__info-content">
+              <h3 class="footer__info-content-title">Legal</h3>
+              <ul class="footer__info-list">
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Imprint</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Terms of Service</a>
+                </li>
+                <li class="footer__info-item">
+                  <a class="footer__info-link" href="#">Privacy Policy</a>
+                </li>
+            </section>
+          </div>
+          <div class="footer__info-row footer__info-row_bottom">
+            <div class="footer__copyright">
+              <a class="footer__logo">
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1:72)">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M14.07 1.19487C14.2254 1.46531 14.3257 1.76382 14.3652 2.0732C14.4047 2.38258 14.3826 2.69672 14.3002 2.99752C14.2177 3.29832 14.0765 3.57983 13.8848 3.82584C13.6931 4.07184 13.4546 4.27747 13.183 4.43087L6.073 8.47087C5.98099 8.52306 5.90441 8.59864 5.85102 8.68996C5.79763 8.78128 5.76934 8.88509 5.769 8.99087V15.3339C5.76934 15.4397 5.79763 15.5435 5.85102 15.6348C5.90441 15.7261 5.98099 15.8017 6.073 15.8539L11.701 19.0529C11.7921 19.1047 11.8952 19.1319 12 19.1319C12.1048 19.1319 12.2079 19.1047 12.299 19.0529L17.927 15.8549C18.0192 15.8026 18.0958 15.7269 18.1492 15.6354C18.2026 15.5438 18.2308 15.4398 18.231 15.3339V11.3899L13.171 14.2279C12.6204 14.5369 11.97 14.6157 11.3616 14.4471C10.7531 14.2785 10.236 13.8762 9.923 13.3279C9.76928 13.0566 9.67074 12.7576 9.63305 12.4482C9.59536 12.1387 9.61926 11.8248 9.70337 11.5246C9.78749 11.2243 9.93016 10.9437 10.1232 10.6989C10.3162 10.454 10.5557 10.2498 10.828 10.0979L18.067 6.03587C20.272 4.79987 23 6.38287 23 8.90087V15.8149C23 17.4349 22.127 18.9299 20.713 19.7339L14.252 23.4049C13.5655 23.7948 12.7895 23.9998 12 23.9998C11.2105 23.9998 10.4345 23.7948 9.748 23.4049L3.287 19.7339C2.59342 19.3411 2.01636 18.7714 1.61462 18.083C1.21287 17.3946 1.00079 16.612 1 15.8149V8.50987C1 6.88987 1.873 5.39487 3.287 4.59187L10.817 0.311873C11.366 -0.000109702 12.0161 -0.0823635 12.6255 0.0830506C13.2348 0.248465 13.7541 0.648127 14.07 1.19487Z"
+                      fill="url(#paint0_linear_1:72)" />
+                  </g>
+                  <defs>
+                    <linearGradient id="paint0_linear_1:72" x1="17.558" y1="3.62887" x2="6.356" y2="21.3399"
+                      gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#FFB45B" />
+                      <stop offset="1" stop-color="#FF8A00" />
+                    </linearGradient>
+                    <clipPath id="clip0_1:72">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+              <p class="footer__copyright-text">
+                Copyright © 2021 Gitpod
+              </p>
+            </div>
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <span class="visually-hidden">Twitter</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12ZM11.6406 9.75375L11.6658 10.169L11.2461 10.1181C9.71843 9.92323 8.38383 9.26226 7.25067 8.15216L6.69668 7.60135L6.55399 8.0081C6.25181 8.91482 6.44487 9.87239 7.0744 10.5164C7.41015 10.8723 7.33461 10.9232 6.75544 10.7113C6.55399 10.6435 6.37772 10.5927 6.36093 10.6181C6.30218 10.6774 6.50363 11.4486 6.66311 11.7536C6.88134 12.1773 7.32621 12.5925 7.81305 12.8383L8.22435 13.0332L7.73751 13.0417C7.26746 13.0417 7.25067 13.0501 7.30103 13.2281C7.46891 13.7789 8.13201 14.3636 8.87066 14.6178L9.39108 14.7958L8.93781 15.067C8.26631 15.4568 7.4773 15.6771 6.68829 15.694C6.31057 15.7025 6 15.7364 6 15.7618C6 15.8466 7.02404 16.3211 7.61999 16.5075C9.40786 17.0584 11.5315 16.8211 13.1263 15.8805C14.2595 15.211 15.3926 13.8806 15.9214 12.5925C16.2068 11.9062 16.4922 10.652 16.4922 10.0503C16.4922 9.66054 16.5174 9.60969 16.9874 9.14362C17.2644 8.87245 17.5246 8.57586 17.575 8.49112C17.6589 8.33011 17.6505 8.33011 17.2224 8.47417C16.509 8.72839 16.4083 8.6945 16.7608 8.31317C17.021 8.042 17.3316 7.5505 17.3316 7.40645C17.3316 7.38102 17.2057 7.42339 17.063 7.49966C16.9119 7.5844 16.5761 7.71151 16.3243 7.78778L15.8711 7.93184L15.4598 7.65219C15.2331 7.49966 14.9142 7.33018 14.7463 7.27934C14.3182 7.1607 13.6635 7.17765 13.2774 7.31323C12.2282 7.69456 11.5651 8.67755 11.6406 9.75375Z"
+                      fill="url(#paint0_linear_1:66)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_1:66" x1="3.45" y1="3.45" x2="21.107" y2="22.6608"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFAD33" />
+                        <stop offset="1" stop-color="#FF8A00" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <span class="visually-hidden">Github</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1:58)">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12.0575 6.36076e-06C9.19512 -0.00296524 6.42524 1.03535 4.24425 2.92889C2.06326 4.82242 0.61373 7.4474 0.155424 10.3334C-0.302881 13.2194 0.259995 16.1778 1.74318 18.6784C3.22637 21.179 5.53292 23.0584 8.24948 23.9798C8.85581 24.0931 9.07024 23.7079 9.07024 23.3831C9.07024 23.0584 9.07024 22.3182 9.07024 21.291C5.70585 22.0387 4.996 19.637 4.996 19.637C4.77281 18.8926 4.29863 18.2531 3.65764 17.8319C2.57068 17.0766 3.74637 17.0766 3.74637 17.0766C4.1274 17.1316 4.49118 17.2744 4.81017 17.4942C5.12916 17.7141 5.395 18.0052 5.58754 18.3455C5.75115 18.6485 5.97172 18.9155 6.23661 19.1312C6.5015 19.347 6.80549 19.5071 7.13113 19.6026C7.45677 19.698 7.79765 19.7268 8.13422 19.6874C8.47079 19.6479 8.79642 19.541 9.09242 19.3726C9.13883 18.7513 9.40107 18.1674 9.83185 17.7262C7.15513 17.4165 4.34531 16.3591 4.34531 11.684C4.32693 10.4627 4.76906 9.28099 5.58015 8.38349C5.21891 7.3216 5.26113 6.15988 5.69846 5.12828C5.69846 5.12828 6.71147 4.79596 9.01109 6.38958C10.9858 5.83579 13.0701 5.83579 15.0448 6.38958C17.3444 4.79596 18.35 5.12828 18.35 5.12828C18.7935 6.14897 18.8462 7.30235 18.4979 8.36083C19.309 9.25834 19.7511 10.4401 19.7328 11.6614C19.7328 16.3893 16.9156 17.4241 14.2314 17.7035C14.5192 17.999 14.7415 18.3543 14.8831 18.7452C15.0247 19.1361 15.0824 19.5536 15.0522 19.9693C15.0522 21.6158 15.0522 22.9451 15.0522 23.3454C15.0522 23.7456 15.2666 24.0553 15.8804 23.9345C18.566 22.9888 20.838 21.1041 22.295 18.6132C23.752 16.1223 24.3002 13.1856 23.8428 10.3219C23.3854 7.45814 21.9518 4.85167 19.7953 2.96295C17.6388 1.07422 14.8982 0.024771 12.0575 6.36076e-06Z"
+                        fill="url(#paint0_linear_1:58)" />
+                    </g>
+                    <defs>
+                      <linearGradient id="paint0_linear_1:58" x1="3.45" y1="3.45" x2="21.107" y2="22.6608"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFAD33" />
+                        <stop offset="1" stop-color="#FF8A00" />
+                      </linearGradient>
+                      <clipPath id="clip0_1:58">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <span class="visually-hidden">Telegram</span>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M0 11.7908C0 5.2781 5.48155 0 11.9919 0C18.4953 0 23.7804 5.48618 23.7804 11.9965C23.7804 18.5069 18.5 23.9884 11.9896 23.9884L0 24V11.7908ZM5.8306 8.13398C7.14804 5.9215 9.53234 4.56533 12.1074 4.56381H12.1143C15.0968 4.56526 17.7792 6.37901 18.8915 9.14636C20.0038 11.9137 19.3228 15.0793 17.1709 17.1445C15.019 19.2096 11.8281 19.7599 9.1088 18.5347L4.36012 19.6074L5.68254 15.3535C4.45692 13.0889 4.51317 10.3465 5.8306 8.13398Z"
+                      fill="url(#paint0_linear_1:62)" />
+                    <defs>
+                      <linearGradient id="paint0_linear_1:62" x1="3.41843" y1="3.45" x2="21.0884" y2="22.499"
+                        gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FFAD33" />
+                        <stop offset="1" stop-color="#FF8A00" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="footer__cookies">
+      <div class="footer__container">
+        <p class="footer__cookies-text">
+          This website uses cookies to enhance the user experience. Read our <a class="footer__cookies-link"
+            href="#">privacy policy</a> for more info.
+        </p>
+        <button class="footer__button" type="button">
+          Accept Cookies
+        </button>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
